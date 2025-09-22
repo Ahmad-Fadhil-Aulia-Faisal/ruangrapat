@@ -11,6 +11,7 @@ class User extends CI_Controller {
     }
 
     public function dashboard() {
-        $this->load->view('user/dashboard');
+            $data['my_booking'] = 0;
+        $this->load->view('user/dashboard', $data);
     }
 }

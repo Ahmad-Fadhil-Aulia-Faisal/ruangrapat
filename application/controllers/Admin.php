@@ -11,6 +11,9 @@ class Admin extends CI_Controller {
     }
 
     public function dashboard() {
-        $this->load->view('admin/dashboard');
+        $data['total_ruang'] = 0;
+        $data['total_user'] = 0;
+        $data['total_booking'] = 0;
+        $this->load->view('admin/dashboard', $data);
     }
 }

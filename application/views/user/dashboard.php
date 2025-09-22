@@ -3,14 +3,14 @@
 
 <div class="container mt-4">
     <h2>Dashboard User</h2>
-    <p>Halo, <strong><?= $this->session->userdata('username'); ?></strong> (User)</p>
+    <p>Halo, <strong><?= $this->session->userdata('username'); ?></strong></p>
 
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-md-6">
-            <div class="card text-bg-success mb-3">
+            <div class="card text-bg-info mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Daftar Ruang Rapat</h5>
-                    <p class="card-text">-- coming soon --</p>
+                    <h5 class="card-title">Booking Saya</h5>
+                    <p class="card-text fs-3"><?= $my_booking; ?></p>
                 </div>
             </div>
         </div>
